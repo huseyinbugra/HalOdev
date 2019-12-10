@@ -1,6 +1,8 @@
 package org.example;
 
-public class Patlican extends Sebze {
+import java.io.Serializable;
+
+public class Patlican extends Sebze implements Serializable {
 
     public Patlican(int urunId, int fiyat) {
         super(urunId, fiyat);

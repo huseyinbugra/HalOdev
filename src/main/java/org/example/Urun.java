@@ -1,8 +1,9 @@
 package org.example;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class Urun {
+public abstract class Urun implements Serializable {
     private int urunId;
     private int fiyat;
 

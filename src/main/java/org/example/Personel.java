@@ -1,8 +1,9 @@
 package org.example;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Personel {
+public class Personel implements Serializable {
     private int id;
     private String ad;
 

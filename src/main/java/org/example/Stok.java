@@ -1,8 +1,9 @@
 package org.example;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Stok {
+public class Stok implements Serializable {
     private Personel personel;
     private Urun urun;
     private int gram;
@@ -38,8 +39,8 @@ public class Stok {
     }
     @Override
     public String toString() {
-        return urun + " " + gram + " TEST UYGULAMASI";
+        return new StringBuffer(" Ad: ").append(this.personel)
+                .append(" Ürün : ").append(this.urun).append(" Yaş : ").append(this.gram).toString();
     }
-
 
 }

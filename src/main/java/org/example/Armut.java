@@ -1,11 +1,11 @@
 package org.example;
 
-public class Armut extends Meyve {
+import java.io.Serializable;
+
+public class Armut extends Meyve implements Serializable {
 
     public Armut(int urunId, int fiyat) {
         super(urunId, fiyat);
-
-
     }
 
     @Override
